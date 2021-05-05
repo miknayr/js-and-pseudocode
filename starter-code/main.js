@@ -7,6 +7,12 @@
 	Check the console to make sure you're getting the desired result.
 
 */
+let name = "Ryan.";
+let age = "30";
+let address = "123 saratoga ave.";
+let greeting = "Hello, my name is " + name + " I'm " + age + " and live on " + address
+
+console.log(greeting);
 
 
 /*
@@ -20,6 +26,9 @@
 
 */
 
+let greeting2 = `Hello, my name is ${name} I'm ${age} and live on ${address}`
+console.log(greeting2)
+
 
 /* 
 	Part 3: "Code Testing." Let's check and see if we did everything correctly and that `greeting` returns the same value as `greeting2`.
@@ -27,6 +36,21 @@
 	If the return is false, correct your bugs above until `greeting` and `greeting2` are equivalent. 
 */
 
+// let problemSolved = true
+// function problem(){
+// 	if (greeting == greeting2) {
+// 		let problemSolved = true;
+// 	} if else {
+// 		let problemSolved = false
+// 	}
+// }
+
+// console.log(problem);
+
+
+
+let problemSolved = (greeting === greeting2);
+console.log(problemSolved);
 
 /*
 	Part 4: (No coding is needed for this part).
@@ -42,3 +66,14 @@
 	Bonus: What would the pseudocode look like if you also had to find the smallest number?
 */
 
+/* first create a variable with an array table of the 20 numbers, spaced out by commas
+- and then create another variable with the Math.max forumla, and inside of it, using the spread syntax, ... and arr to account for all the numbers inside.  
+- and then finally, i would console log "max" inside the parameters(?) and it should return the largest number within the array.
+
+for min, i would replace Math.max with Math.min.
+*/
+
+
+// var arr = [1, 2, 3, 234, 343, 2232, 221, 12, 65];
+// var max = Math.max(...arr);
+// console.log(max);
